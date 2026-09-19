@@ -1,0 +1,56 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "laghos",
+  "variant": "+rocm caliper=mpi,time",
+  "system_args": "gpumode=CPX",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "hypre",
+        "old_version": "3.2.0",
+        "new_version": "3.1.0",
+        "old_commit": "none",
+        "new_commit": "none",
+        "version_changed": true,
+        "commit_changed": false
+      },
+      {
+        "kind": "dependency",
+        "name": "umpire",
+        "old_version": "2026.07.1",
+        "new_version": "2025.12.0",
+        "old_commit": "5639f6c1fd4ca1fed7f0f1f48dcbbfbd00899484",
+        "new_commit": "0372fbd6e1f17d7e6dd72693f8b857f3ec7559e9",
+        "version_changed": true,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 75.2759291253,
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive --setattr=gpumode=CPX --conf=resource.rediscover=true, laghos, +rocm caliper=mpi,time, CPX, gpumode=CPX]",
+    "id": "3997120",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/3997120",
+    "pipeline_id": "764358"
+  },
+  "date": "2026-09-18T10:18:32-07:00",
+  "gitSHA": "1bea1096054d7c14e74452ac90791cded9ff4cb8"
+}
