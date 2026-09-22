@@ -1,0 +1,35 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "laghos",
+  "variant": "+rocm caliper=mpi,time",
+  "system_args": "gpumode=CPX",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 75.829018160985,
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive --setattr=gpumode=CPX --conf=resource.rediscover=true, laghos, +rocm caliper=mpi,time, CPX, gpumode=CPX]",
+    "id": "4005399",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4005399",
+    "pipeline_id": "765769"
+  },
+  "date": "2026-09-22T00:03:08-07:00",
+  "gitSHA": "4e2c541b4da1e7491895b1651f84a4191d5b8500"
+}
