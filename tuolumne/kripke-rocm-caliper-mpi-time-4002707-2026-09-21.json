@@ -1,0 +1,35 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "kripke",
+  "variant": "+rocm caliper=mpi,time",
+  "system_args": "gpumode=TPX",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 17.869518602400003,
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive --setattr=gpumode=TPX --conf=resource.rediscover=true, kripke, +rocm caliper=mpi,time, TPX, gpumode=TPX]",
+    "id": "4002707",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4002707",
+    "pipeline_id": "765383"
+  },
+  "date": "2026-09-21T08:31:46-07:00",
+  "gitSHA": "1bea1096054d7c14e74452ac90791cded9ff4cb8"
+}
