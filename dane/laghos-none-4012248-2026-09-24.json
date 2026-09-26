@@ -1,0 +1,36 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "laghos",
+  "variant": "",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Not Tested",
+  "status_changed": true,
+  "run_exit_code": null,
+  "changes": {
+    "available": false,
+    "reason": "Missing githash change summary",
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, laghos]",
+    "id": "4012248",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4012248",
+    "pipeline_id": "767072"
+  },
+  "date": "2026-09-24T00:03:08-07:00",
+  "gitSHA": "3c75d756c8769bc99be7651ad50df564a6c394f3"
+}
