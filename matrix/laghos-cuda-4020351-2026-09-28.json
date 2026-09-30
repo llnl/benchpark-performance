@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "laghos",
+  "variant": "+cuda",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "mfem",
+        "old_version": "develop",
+        "new_version": "develop",
+        "old_commit": "45799ebea86d9d83f027689ba2bcbd7e50f3021a",
+        "new_commit": "c362dea2470d2d27be15df6e55ae1f3c85d031f3",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, laghos, +cuda]",
+    "id": "4020351",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4020351",
+    "pipeline_id": "768527"
+  },
+  "date": "2026-09-28T00:03:06-07:00",
+  "gitSHA": "3c75d756c8769bc99be7651ad50df564a6c394f3"
+}
