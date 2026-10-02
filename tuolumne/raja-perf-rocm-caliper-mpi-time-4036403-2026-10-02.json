@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "raja-perf",
+  "variant": "+rocm caliper=mpi,time",
+  "system_args": "gpumode=CPX",
+  "benchmark_version": "",
+  "status": "Run",
+  "status_changed": false,
+  "run_exit_code": 1,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "caliper",
+        "old_version": "master",
+        "new_version": "master",
+        "old_commit": "a34819aaf3a4428572e1f094de4db4c4513c7e45",
+        "new_commit": "098f8ed509f8a4ca3ea7955700b96b7f92f9275f",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "benchpark query failed",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive --setattr=gpumode=CPX --conf=resource.rediscover=true, raja-perf, +rocm caliper=mpi,time, CPX, gpumode=CPX]",
+    "id": "4036403",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4036403",
+    "pipeline_id": "770947"
+  },
+  "date": "2026-10-02T00:03:10-07:00",
+  "gitSHA": "3c75d756c8769bc99be7651ad50df564a6c394f3"
+}
