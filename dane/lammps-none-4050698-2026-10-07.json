@@ -1,0 +1,56 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "lammps",
+  "variant": "",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "intel-oneapi-compilers",
+        "old_version": "2025.2.0",
+        "new_version": "2025.3.1",
+        "old_commit": "none",
+        "new_commit": "none",
+        "version_changed": true,
+        "commit_changed": false
+      },
+      {
+        "kind": "dependency",
+        "name": "intel-oneapi-runtime",
+        "old_version": "2025.2.0",
+        "new_version": "2025.3.1",
+        "old_commit": "none",
+        "new_commit": "none",
+        "version_changed": true,
+        "commit_changed": false
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, lammps]",
+    "id": "4050698",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4050698",
+    "pipeline_id": "773192"
+  },
+  "date": "2026-10-07T00:03:09-07:00",
+  "gitSHA": "8d41336f01645f2bb5ddd29c0e8ad231d64d7357"
+}

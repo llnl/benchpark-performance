@@ -1,0 +1,70 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "amg2023",
+  "variant": "workload=problem2 caliper=mpi,time",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "caliper",
+        "old_version": "master",
+        "new_version": "master",
+        "old_commit": "098f8ed509f8a4ca3ea7955700b96b7f92f9275f",
+        "new_commit": "ba0da3487c1e171da4ce11bb7584e07350b08380",
+        "version_changed": false,
+        "commit_changed": true
+      },
+      {
+        "kind": "dependency",
+        "name": "intel-oneapi-compilers",
+        "old_version": "2025.2.0",
+        "new_version": "2025.3.1",
+        "old_commit": "none",
+        "new_commit": "none",
+        "version_changed": true,
+        "commit_changed": false
+      },
+      {
+        "kind": "dependency",
+        "name": "intel-oneapi-runtime",
+        "old_version": "2025.2.0",
+        "new_version": "2025.3.1",
+        "old_commit": "none",
+        "new_commit": "none",
+        "version_changed": true,
+        "commit_changed": false
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 1.4050611307999998,
+    "regressed": false,
+    "baseline_value": 1.4330162787,
+    "threshold": 0.05,
+    "percent_deviation": -1.9507906724800417,
+    "regression_changed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, amg2023, workload=problem2 caliper=mpi,time]",
+    "id": "4050758",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4050758",
+    "pipeline_id": "773192"
+  },
+  "date": "2026-10-07T00:03:09-07:00",
+  "gitSHA": "8d41336f01645f2bb5ddd29c0e8ad231d64d7357"
+}
