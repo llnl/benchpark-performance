@@ -1,0 +1,50 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "kripke",
+  "variant": "+rocm caliper=mpi,time",
+  "system_args": "gpumode=TPX",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "caliper",
+        "old_version": "master",
+        "new_version": "master",
+        "old_commit": "098f8ed509f8a4ca3ea7955700b96b7f92f9275f",
+        "new_commit": "ba0da3487c1e171da4ce11bb7584e07350b08380",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 17.963785071999997,
+    "regressed": false,
+    "baseline_value": 17.5543523206,
+    "threshold": 0.05,
+    "percent_deviation": 2.332371732789757,
+    "regression_changed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive --setattr=gpumode=TPX --conf=resource.rediscover=true, kripke, +rocm caliper=mpi,time, TPX, gpumode=TPX]",
+    "id": "4046469",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4046469",
+    "pipeline_id": "772588"
+  },
+  "date": "2026-10-06T00:03:15-07:00",
+  "gitSHA": "f15c69823c599650138419d97df471fc241142a9"
+}
