@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "amg2023",
+  "variant": "workload=problem2 caliper=mpi,time",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": true,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "caliper",
+        "old_version": "master",
+        "new_version": "master",
+        "old_commit": "219665f322f5b34c4d286a111c7294598b67c406",
+        "new_commit": "943d1907c1fa8abbdac506197163ffd0f7fe9937",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 1.3621646831999998,
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, amg2023, workload=problem2 caliper=mpi,time]",
+    "id": "4061104",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4061104",
+    "pipeline_id": "774667"
+  },
+  "date": "2026-10-09T00:03:13-07:00",
+  "gitSHA": "ec268c0d7c882bc8235974649242f3094f2b3370"
+}
