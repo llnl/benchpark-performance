@@ -1,0 +1,50 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "laghos",
+  "variant": "+rocm caliper=mpi,time",
+  "system_args": "gpumode=TPX",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "caliper",
+        "old_version": "master",
+        "new_version": "master",
+        "old_commit": "9a41091543f19fe9613c44d776dc07c552865641",
+        "new_commit": "ba9bd773b8489a83ee2fca53d690b2f65ce3383e",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 75.86999507478,
+    "regressed": false,
+    "baseline_value": 75.218153589165,
+    "threshold": 0.05,
+    "percent_deviation": 0.8666012850771317,
+    "regression_changed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive --setattr=gpumode=TPX --conf=resource.rediscover=true, laghos, +rocm caliper=mpi,time, TPX, gpumode=TPX]",
+    "id": "4065245",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4065245",
+    "pipeline_id": "775396"
+  },
+  "date": "2026-10-11T00:03:18-07:00",
+  "gitSHA": "ec268c0d7c882bc8235974649242f3094f2b3370"
+}
