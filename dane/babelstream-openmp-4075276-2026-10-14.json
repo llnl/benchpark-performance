@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "babelstream",
+  "variant": "+openmp",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": false,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "babelstream",
+        "old_version": "main",
+        "new_version": "main",
+        "old_commit": "17ab377b0e919e14fd3df2b67268761fdac8abb3",
+        "new_commit": "7609d0d72702a468b35c3302ce61f4d865cdccec",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, babelstream, +openmp]",
+    "id": "4075276",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4075276",
+    "pipeline_id": "776916"
+  },
+  "date": "2026-10-14T00:03:17-07:00",
+  "gitSHA": "89b89abb94bbe41e0b5b91ffdbedd601f9e2d16b"
+}

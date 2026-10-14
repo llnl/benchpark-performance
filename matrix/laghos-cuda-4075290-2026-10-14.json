@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "laghos",
+  "variant": "+cuda",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "cuda",
+        "old_version": "12.9.1",
+        "new_version": "13.1.1",
+        "old_commit": "none",
+        "new_commit": "none",
+        "version_changed": true,
+        "commit_changed": false
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, laghos, +cuda]",
+    "id": "4075290",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4075290",
+    "pipeline_id": "776916"
+  },
+  "date": "2026-10-14T00:03:17-07:00",
+  "gitSHA": "89b89abb94bbe41e0b5b91ffdbedd601f9e2d16b"
+}
