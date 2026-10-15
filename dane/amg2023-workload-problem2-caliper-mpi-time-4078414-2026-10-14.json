@@ -1,0 +1,39 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "amg2023",
+  "variant": "workload=problem2 caliper=mpi,time",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 1.3653327573000003,
+    "regressed": false,
+    "baseline_value": 1.4292024835,
+    "threshold": 0.05,
+    "percent_deviation": -4.468906746060776,
+    "regression_changed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, amg2023, workload=problem2 caliper=mpi,time]",
+    "id": "4078414",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4078414",
+    "pipeline_id": "777380"
+  },
+  "date": "2026-10-14T15:20:52-07:00",
+  "gitSHA": "fec30e292184de8e57f0f5568bf3bbace5d54550"
+}

@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "babelstream",
+  "variant": "+rocm",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": false,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "babelstream",
+        "old_version": "main",
+        "new_version": "main",
+        "old_commit": "683565324d78b965c568470134f5aeeffe340dfd",
+        "new_commit": "995ceb0d266e5e90fbeee5f3c7fb3968973019c3",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive, babelstream, +rocm]",
+    "id": "4078364",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4078364",
+    "pipeline_id": "777380"
+  },
+  "date": "2026-10-14T15:20:52-07:00",
+  "gitSHA": "fec30e292184de8e57f0f5568bf3bbace5d54550"
+}
