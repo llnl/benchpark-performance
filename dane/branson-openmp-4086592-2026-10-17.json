@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "branson",
+  "variant": "+openmp",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Run",
+  "status_changed": true,
+  "run_exit_code": 1,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": false,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "branson",
+        "old_version": "develop",
+        "new_version": "develop",
+        "old_commit": "eed7f71699e9e2d7afc96a849c9c9b2a215cb1dd",
+        "new_commit": "4ce6294f035a3874ca014cee283275e61d83492f",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, branson, +openmp]",
+    "id": "4086592",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4086592",
+    "pipeline_id": "778676"
+  },
+  "date": "2026-10-17T00:03:18-07:00",
+  "gitSHA": "32df0e94c02a7c563d1be8ad0bcfb5bb0135b1fe"
+}
