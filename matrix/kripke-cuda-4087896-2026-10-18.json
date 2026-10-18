@@ -1,0 +1,36 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "kripke",
+  "variant": "+cuda",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Build",
+  "status_changed": false,
+  "run_exit_code": 1,
+  "changes": {
+    "available": false,
+    "reason": "Missing githash change summary",
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, kripke, +cuda]",
+    "id": "4087896",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4087896",
+    "pipeline_id": "778943"
+  },
+  "date": "2026-10-18T00:03:11-07:00",
+  "gitSHA": "946ac2105642ca28cf53185564ddf63fbb517f40"
+}
