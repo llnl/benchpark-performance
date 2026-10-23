@@ -1,0 +1,39 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "amg2023",
+  "variant": "+cuda workload=problem2 caliper=mpi,time",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 6.609802803067,
+    "regressed": true,
+    "baseline_value": 6.012861345953,
+    "threshold": 0.05,
+    "percent_deviation": 9.92774359441659,
+    "regression_changed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, amg2023, +cuda workload=problem2 caliper=mpi,time]",
+    "id": "4109331",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4109331",
+    "pipeline_id": "781309"
+  },
+  "date": "2026-10-22T16:34:56-07:00",
+  "gitSHA": "86f2e09a86b50db25fe33e940557cf442de646f0"
+}
