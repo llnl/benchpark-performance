@@ -1,0 +1,36 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "raja-perf",
+  "variant": "+rocm compiler_attribution=on caliper=time",
+  "system_args": "rocm=6.4.3",
+  "benchmark_version": "develop",
+  "status": "Build",
+  "status_changed": false,
+  "run_exit_code": 1,
+  "changes": {
+    "available": false,
+    "reason": "Missing githash change summary",
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive, raja-perf, develop, +rocm compiler_attribution=on caliper=time, rocm=6.4.3, SPX]",
+    "id": "4104163",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4104163",
+    "pipeline_id": "780857"
+  },
+  "date": "2026-10-22T00:03:14-07:00",
+  "gitSHA": "df19f8a00690542ac6886dd22778597e086fd2ec"
+}

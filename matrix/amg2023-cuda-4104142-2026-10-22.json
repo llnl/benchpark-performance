@@ -1,0 +1,56 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "amg2023",
+  "variant": "+cuda",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "amg2023",
+        "old_version": "develop",
+        "new_version": "20261006",
+        "old_commit": "fc4d32089c7c8c72e1dfa48101aaa5a29247effe",
+        "new_commit": "fc4d32089c7c8c72e1dfa48101aaa5a29247effe",
+        "version_changed": true,
+        "commit_changed": false
+      },
+      {
+        "kind": "dependency",
+        "name": "hypre",
+        "old_version": "develop",
+        "new_version": "3.2.0",
+        "old_commit": "9f52d27ae4abf476455e0ace3d2ded93b286dacc",
+        "new_commit": "none",
+        "version_changed": true,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, amg2023, +cuda]",
+    "id": "4104142",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4104142",
+    "pipeline_id": "780857"
+  },
+  "date": "2026-10-22T00:03:14-07:00",
+  "gitSHA": "df19f8a00690542ac6886dd22778597e086fd2ec"
+}
