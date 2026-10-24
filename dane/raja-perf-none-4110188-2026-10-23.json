@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "raja-perf",
+  "variant": "",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": false,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "raja-perf",
+        "old_version": "2025.12.1",
+        "new_version": "2026.07.0",
+        "old_commit": "e3c6197dfa8f1c9ac61635c26775c333411bdcd5",
+        "new_commit": "be027f2c350958e4b704fe6513915fc20bcca85f",
+        "version_changed": true,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, raja-perf]",
+    "id": "4110188",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4110188",
+    "pipeline_id": "781429"
+  },
+  "date": "2026-10-23T00:03:13-07:00",
+  "gitSHA": "105e434b0f2dd0abf56f736814c229b21c79acd3"
+}
