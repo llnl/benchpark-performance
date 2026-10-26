@@ -1,0 +1,35 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "py-scaffold",
+  "variant": "+rocm package_manager=spack-pip caliper=time,rocm,rocm-gputime,rccl allocation=torchrun-hpc",
+  "system_args": "rocm=7.1.1",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "benchpark query failed",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive, py-scaffold, SPX, rocm=7.1.1, +rocm package_manager=spack-pip caliper=time,rocm,rocm-gputime,rccl allocation=torchrun-hpc]",
+    "id": "4118028",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4118028",
+    "pipeline_id": "782523"
+  },
+  "date": "2026-10-26T00:03:13-07:00",
+  "gitSHA": "c841e290d0bd5598addafe688497a84195237e2d"
+}
