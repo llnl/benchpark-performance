@@ -1,0 +1,36 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "py-scaffold",
+  "variant": "+cuda package_manager=spack-pip caliper=mpi,time allocation=torchrun-hpc",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": true,
+  "run_exit_code": 0,
+  "changes": {
+    "available": false,
+    "reason": "Missing githash change summary",
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "benchpark query failed",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, py-scaffold, +cuda package_manager=spack-pip caliper=mpi,time allocation=torchrun-hpc]",
+    "id": "4135260",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4135260",
+    "pipeline_id": "784450"
+  },
+  "date": "2026-10-30T00:03:10-07:00",
+  "gitSHA": "5f876a8e0ae2585e77d0d8e20a86519718c33f16"
+}
