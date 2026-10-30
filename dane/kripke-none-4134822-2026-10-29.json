@@ -1,0 +1,66 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "kripke",
+  "variant": "",
+  "system_args": "",
+  "benchmark_version": "develop",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "camp",
+        "old_version": "main",
+        "new_version": "2026.07.2",
+        "old_commit": "b4edd077937245c120e25e6080be8caee5926347",
+        "new_commit": "b4edd077937245c120e25e6080be8caee5926347",
+        "version_changed": true,
+        "commit_changed": false
+      },
+      {
+        "kind": "dependency",
+        "name": "chai",
+        "old_version": "2026.07.0",
+        "new_version": "2026.07.1",
+        "old_commit": "7ed19adb246d6df796434750d2994b84cd8558e7",
+        "new_commit": "cd2bb603ccd1ff0271bdcb2164448cc6ad6ae5b3",
+        "version_changed": true,
+        "commit_changed": true
+      },
+      {
+        "kind": "dependency",
+        "name": "umpire",
+        "old_version": "develop",
+        "new_version": "2026.07.2",
+        "old_commit": "03c43d88537e4932b9d6dac8591abcd8c25a61ae",
+        "new_commit": "356dd9cf245360c07f9a09fbe39a9f3c83e77f0c",
+        "version_changed": true,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, kripke, develop]",
+    "id": "4134822",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4134822",
+    "pipeline_id": "784365"
+  },
+  "date": "2026-10-29T16:43:25-07:00",
+  "gitSHA": "21502722ccf6874e99c1d810963817c01f7f0d10"
+}
