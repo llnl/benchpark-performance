@@ -1,0 +1,76 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "kripke",
+  "variant": "",
+  "system_args": "",
+  "benchmark_version": "develop",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "kripke",
+        "old_version": "develop",
+        "new_version": "develop",
+        "old_commit": "cb4dc5ed8a509240ec510d9e79999baf6801cfc6",
+        "new_commit": "46563d6d19afe7fdf65fc564638c7ec13615866f",
+        "version_changed": false,
+        "commit_changed": true
+      },
+      {
+        "kind": "dependency",
+        "name": "camp",
+        "old_version": "main",
+        "new_version": "2026.07.2",
+        "old_commit": "b4edd077937245c120e25e6080be8caee5926347",
+        "new_commit": "b4edd077937245c120e25e6080be8caee5926347",
+        "version_changed": true,
+        "commit_changed": false
+      },
+      {
+        "kind": "dependency",
+        "name": "chai",
+        "old_version": "2026.07.0",
+        "new_version": "2026.07.1",
+        "old_commit": "7ed19adb246d6df796434750d2994b84cd8558e7",
+        "new_commit": "cd2bb603ccd1ff0271bdcb2164448cc6ad6ae5b3",
+        "version_changed": true,
+        "commit_changed": true
+      },
+      {
+        "kind": "dependency",
+        "name": "umpire",
+        "old_version": "develop",
+        "new_version": "2026.07.2",
+        "old_commit": "03c43d88537e4932b9d6dac8591abcd8c25a61ae",
+        "new_commit": "356dd9cf245360c07f9a09fbe39a9f3c83e77f0c",
+        "version_changed": true,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, kripke, develop]",
+    "id": "4139457",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4139457",
+    "pipeline_id": "785047"
+  },
+  "date": "2026-10-31T00:03:14-07:00",
+  "gitSHA": "1ac4c11f6f0e6c261cbef7d381413682bace2bb2"
+}
