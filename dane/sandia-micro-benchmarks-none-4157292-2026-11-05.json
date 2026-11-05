@@ -1,0 +1,35 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "sandia-micro-benchmarks",
+  "variant": "",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, sandia-micro-benchmarks]",
+    "id": "4157292",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4157292",
+    "pipeline_id": "787451"
+  },
+  "date": "2026-11-05T00:03:06-08:00",
+  "gitSHA": "c6620b9ed6d2716e750a2ccc484b668f86965806"
+}
