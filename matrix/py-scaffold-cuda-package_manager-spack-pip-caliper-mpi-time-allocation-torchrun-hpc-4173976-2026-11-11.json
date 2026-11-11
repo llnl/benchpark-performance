@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "py-scaffold",
+  "variant": "+cuda package_manager=spack-pip caliper=mpi,time allocation=torchrun-hpc",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "caliper",
+        "old_version": "master",
+        "new_version": "master",
+        "old_commit": "cce58ab6ab594232b47815f85766fca122e6bf38",
+        "new_commit": "390ad1745c299e0c89a5d453e9b7a79522459991",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "benchpark query failed",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, py-scaffold, +cuda package_manager=spack-pip caliper=mpi,time allocation=torchrun-hpc]",
+    "id": "4173976",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4173976",
+    "pipeline_id": "790159"
+  },
+  "date": "2026-11-11T00:03:16-08:00",
+  "gitSHA": "dbef09df4d4dfa75754e2029364ffd8f0e49d448"
+}
