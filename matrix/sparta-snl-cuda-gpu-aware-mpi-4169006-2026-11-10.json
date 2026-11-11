@@ -1,0 +1,35 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "sparta-snl",
+  "variant": "+cuda~gpu-aware-mpi",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Run",
+  "status_changed": false,
+  "run_exit_code": 1,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, sparta-snl, +cuda~gpu-aware-mpi]",
+    "id": "4169006",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4169006",
+    "pipeline_id": "789416"
+  },
+  "date": "2026-11-10T00:03:11-08:00",
+  "gitSHA": "5c6cffe42d0001e2a06430b23f58df92b8792d98"
+}

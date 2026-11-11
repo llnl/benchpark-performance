@@ -1,0 +1,66 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "laghos",
+  "variant": "+rocm",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "laghos",
+        "old_version": "4.0-ats-6",
+        "new_version": "3.2",
+        "old_commit": "80160097410ea588729ba165e1796d636249cf30",
+        "new_commit": "none",
+        "version_changed": true,
+        "commit_changed": true
+      },
+      {
+        "kind": "dependency",
+        "name": "raja",
+        "old_version": "2026.07.0",
+        "new_version": "2026.07.1",
+        "old_commit": "80d218eba514a6d51bfd99ab6ebd6fbf83a74ca9",
+        "new_commit": "a7230d0fd7b2d8df7433f8f0464e833db42d38df",
+        "version_changed": true,
+        "commit_changed": true
+      },
+      {
+        "kind": "dependency",
+        "name": "umpire",
+        "old_version": "2026.07.1",
+        "new_version": "2026.07.2",
+        "old_commit": "5639f6c1fd4ca1fed7f0f1f48dcbbfbd00899484",
+        "new_commit": "356dd9cf245360c07f9a09fbe39a9f3c83e77f0c",
+        "version_changed": true,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive, laghos, +rocm]",
+    "id": "4168975",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4168975",
+    "pipeline_id": "789416"
+  },
+  "date": "2026-11-10T00:03:11-08:00",
+  "gitSHA": "5c6cffe42d0001e2a06430b23f58df92b8792d98"
+}
