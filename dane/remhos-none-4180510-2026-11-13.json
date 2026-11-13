@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "dane",
+  "benchmark": "remhos",
+  "variant": "",
+  "system_args": "",
+  "benchmark_version": "develop",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": true,
+    "packages": [
+      {
+        "kind": "dependency",
+        "name": "mfem",
+        "old_version": "develop",
+        "new_version": "develop",
+        "old_commit": "35e3f7151fc174cbe8d4a0f4a9d63072eae16fba",
+        "new_commit": "ff8460d16d94d1ae2358e46497321c08a46eb7d5",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [dane, llnl-cluster, -N 1 -t 01:00:00 --exclusive --reservation=ci, remhos, develop]",
+    "id": "4180510",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4180510",
+    "pipeline_id": "791310"
+  },
+  "date": "2026-11-13T00:03:12-08:00",
+  "gitSHA": "552683d7e0c087c97afec0c069c43605eda27eb9"
+}

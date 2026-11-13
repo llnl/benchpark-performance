@@ -1,0 +1,35 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "branson",
+  "variant": "+rocm",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive, branson, +rocm]",
+    "id": "4180462",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4180462",
+    "pipeline_id": "791310"
+  },
+  "date": "2026-11-13T00:03:12-08:00",
+  "gitSHA": "552683d7e0c087c97afec0c069c43605eda27eb9"
+}
