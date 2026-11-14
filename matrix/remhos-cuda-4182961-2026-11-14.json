@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "remhos",
+  "variant": "+cuda",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": false,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "remhos",
+        "old_version": "2.0",
+        "new_version": "2.0",
+        "old_commit": "478f71cf25109681f4c7cff3dedf89a06ac5fb2b",
+        "new_commit": "b49db32d9e788d78338009c7d134e408ef98ed06",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, remhos, +cuda]",
+    "id": "4182961",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4182961",
+    "pipeline_id": "791805"
+  },
+  "date": "2026-11-14T00:03:12-08:00",
+  "gitSHA": "af00877fe539284c3d8156ae83da48db2ca88a95"
+}

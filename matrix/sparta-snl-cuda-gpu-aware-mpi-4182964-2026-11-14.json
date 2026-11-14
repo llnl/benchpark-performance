@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "matrix",
+  "benchmark": "sparta-snl",
+  "variant": "+cuda~gpu-aware-mpi",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Run",
+  "status_changed": true,
+  "run_exit_code": 1,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": false,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "sparta-snl",
+        "old_version": "master",
+        "new_version": "master",
+        "old_commit": "5702a655006b76fbe41de68d64c8f65249b64d23",
+        "new_commit": "1c9d6aa78f9ab8f183f4168e0ce26d4e84968e4a",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [matrix, llnl-matrix, -N 1 -t 01:00:00 --exclusive, sparta-snl, +cuda~gpu-aware-mpi]",
+    "id": "4182964",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4182964",
+    "pipeline_id": "791805"
+  },
+  "date": "2026-11-14T00:03:12-08:00",
+  "gitSHA": "af00877fe539284c3d8156ae83da48db2ca88a95"
+}
