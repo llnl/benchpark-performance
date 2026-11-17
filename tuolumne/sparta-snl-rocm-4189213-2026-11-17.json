@@ -1,0 +1,46 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "sparta-snl",
+  "variant": "+rocm",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": true,
+    "dependencies_changed": false,
+    "packages": [
+      {
+        "kind": "application",
+        "name": "sparta-snl",
+        "old_version": "master",
+        "new_version": "master",
+        "old_commit": "1c9d6aa78f9ab8f183f4168e0ce26d4e84968e4a",
+        "new_commit": "1e82344a5e37141268d1ffa70087620e2c92c2ec",
+        "version_changed": false,
+        "commit_changed": true
+      }
+    ],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": false,
+    "reason": "No Caliper artifacts found",
+    "metric": "Avg time/rank",
+    "region": "main",
+    "regressed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive, sparta-snl, +rocm]",
+    "id": "4189213",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4189213",
+    "pipeline_id": "792883"
+  },
+  "date": "2026-11-17T00:03:09-08:00",
+  "gitSHA": "dcdbe2defa3ffa0de41b708585ee4a55069c572c"
+}
