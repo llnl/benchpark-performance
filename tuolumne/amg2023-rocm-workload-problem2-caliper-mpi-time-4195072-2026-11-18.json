@@ -1,0 +1,39 @@
+{
+  "checkout": "Nightly",
+  "host": "tuolumne",
+  "benchmark": "amg2023",
+  "variant": "+rocm workload=problem2 caliper=mpi,time",
+  "system_args": "",
+  "benchmark_version": "",
+  "status": "Pass",
+  "status_changed": false,
+  "run_exit_code": 0,
+  "changes": {
+    "available": true,
+    "application_changed": false,
+    "dependencies_changed": false,
+    "packages": [],
+    "application_spec_changed": false,
+    "experiment_spec_changed": false,
+    "system_spec_changed": false
+  },
+  "performance": {
+    "available": true,
+    "metric": "Avg time/rank",
+    "region": "main",
+    "value": 3.9933514998370003,
+    "regressed": false,
+    "baseline_value": 3.950602960037,
+    "threshold": 0.05,
+    "percent_deviation": 1.0820763370156512,
+    "regression_changed": false
+  },
+  "job": {
+    "name": "nightly_test_run: [tuolumne, llnl-elcapitan, -N 1 -t 60m --queue=pci --exclusive, amg2023, +rocm workload=problem2 caliper=mpi,time, SPX]",
+    "id": "4195072",
+    "url": "https://lc.llnl.gov/gitlab/benchpark/benchpark/-/jobs/4195072",
+    "pipeline_id": "793855"
+  },
+  "date": "2026-11-18T13:45:51-08:00",
+  "gitSHA": "bfe7bf0820451e873e4eb92884193c2d4aca995e"
+}
